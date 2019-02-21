@@ -6,9 +6,12 @@ Sub XPC_csv_to_cryptact()
 'シートを挿入する
     Worksheets.Add.Name = "XPC qtWallet"
     
+'実行結果"TRUE"のみ抽出
 '自分への送金の行を抽出
 '鋳造の行を抽出
     Worksheets(2).Select
+    Range("A1").AutoFilter _
+        Field:=1, Criteria1:="TRUE"
     Range("C1").AutoFilter _
         Field:=3, Criteria1:="鋳造", _
         Operator:=xlOr, Criteria2:="自分への送金"
