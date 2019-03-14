@@ -1,8 +1,7 @@
 # VBA-macro
 
-�l�I�ɍ�����AExcel�p�̃}�N���ł��B
+個人的に作った、Excel用のマクロです。
 
-�Ecsv2cryptact.bas
-XPChain qtWallet�̎���f�[�^���G�N�X�|�[�g����csv���ACryptact�̃J�X�^���f�[�^�d�l�ɕ��ёւ�����̂ł��B
-��2019/01/16���݁ACryptact��XPC�ɑΉ����Ă܂���B�Ή���ɃA�b�v���[�h���\�ɂȂ�܂��B
-
+・csv2cryptact.bas
+XPChain qtWalletの取引データをエクスポートしたcsvを、Cryptactのカスタムデータ仕様に並び替えるものです。
+鋳造と手数料だけを抜き出します。その他の送金については、適宜Cryptact上にて手動で入力してください。
